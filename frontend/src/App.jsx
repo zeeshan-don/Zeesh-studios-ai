@@ -84,7 +84,8 @@ function App() {
     try {
       const response = await fetch(
   `https://zeesh-studios-ai-production.up.railway.app/chat?message=${encodeURIComponent(userMessage)}`
-      );
+      )
+      ;
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
